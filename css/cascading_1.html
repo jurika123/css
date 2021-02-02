@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      li{color:red;}
+      #idsel{color:blue !important;} /*최고 권위로 css를 변경하고 싶으면 !important를 넣으면 된다.*/
+      .classsel{color:green;}
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>html</li>
+      <li id="idsel" class="classsel"
+      style="color:powderblue">css</li>
+      <li>javascript</li>
+    </ul>
+
+
+    <ol> 캐스케이딩 우선 순위. 위에서부터 구체적 -> 포괄적
+      <li>style attribute</li>
+      <li>id selector 아이디 선택자</li>
+      <li>class selector 클래스 선택자</li>
+      <li>tag selector 태그 선택자.</li>
+    </ol>
+  </body>
+</html>
