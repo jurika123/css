@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container{
+      background-color: pink;
+      display:flex; /*플렉스를 사용하려고 하면 반드시 부모에게
+      플렉스 값을 넣어주는게 시작이다.
+      플렉스는 각각의 태그들을 정렬하는 방법.
+      기본적(row)으로 flex는 화면의 전체를 차지하게 된다.*/
+
+      /*flex-direction: row-reverse; 각각의 태그들이 반대쪽으로 가서 정렬이된다.
+      기본값인 left -> right로 정렬됨.
+      flex-direction의 값을 지정하지않으면 flex는 기본적으로 row(행)라는 기본값을 가지게된다.
+      reverse로 설정하면 반대로 적용한다.*/
+
+      height: 200px;
+      flex-direction: column-reverse;/*height값을 주어야 보임!
+      dolumn으로 주게되면 수직방향으로 각각의 태그들이 정렬되는것을 볼 수 있다.
+      reverse는 말그대로 반대쪽 즉 태그들이 밑으로 간 수직방향 정렬이다.*/
+    }
+    .item{
+      background-color: skyblue;
+      font-color: white;
+      border: 1px solid white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div> <!--div처럼 화면 전체를 쓰는 태그 : block level element-->
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      ul li{
+        color:red;
+      }
+
+      #id>li{
+        border:1px solid red;
+        color:green;
+      }
+
+      #id ol{
+        color:skyblue;
+      }
+
+      ul,ol{
+        background-color: powderblue;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <ol id="id">
+      <li>HTML</li>
+        <li>
+          <ol>css
+            <li>selector</li>
+            <li>declaration</li>
+          </ol>
+        </li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+  </body>
+</html>

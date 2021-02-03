@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    #parent, #other, #grand{
+       border:5px solid pink;
+   }
+      #grand{
+        position: relative;/*만약 me에 position: absolute로 지정을 했는데
+        부모속성인 parent에 position: static이 아닌 다른 속성을 주었다면
+        자식관계인 me는 parent의 위치를 기준으로해서
+        자신의 오프셋 값을 설정한다.*/
+      }
+      #me{
+        background-color: skyblue;
+        color: white;
+        position: absolute;/*html엘리먼트로 기준으로 해서 위치를 지정할 경우.
+        오프셋 값이 없으면 부모 엘리먼트의 위치를기준으로 자신의 위치가 생긴다.
+        만약 어떤 엘리먼트를 position: absolute로 지정하게 되면
+        그 엘리먼트는 누구의 소속도 아닌 hmtl의 소속으로 지정이 된다.
+        아예 parent부모에서 나온다. 그래서 parent의 컨텐츠 크기는
+        parent만 갖는 크기를 가진다.
+        그래서 me는 자기 자신의 컨텐츠의 크기만큼의 독립적인 공간을 가지게 된다.*/
+        left: 0;/*오프셋*/
+        top: 0;/*오프셋*/
+        background-color: skyblue;
+        color: white;
+        position: absolute;/*html엘리먼트로 기준으로 해서 위치를 지정할 경우.
+        오프셋 값이 없으면 부모 엘리먼트의 위치를기준으로 자신의 위치가 생긴다.
+        만약 어떤 엘리먼트를 position: absolute로 지정하게 되면
+        그 엘리먼트는 누구의 소속도 아닌 hmtl의 소속으로 지정이 된다.
+        아예 parent부모에서 나온다. 그래서 parent의 컨텐츠 크기는
+        parent만 갖는 크기를 가진다.
+        그래서 me는 자기 자신의 컨텐츠의 크기만큼의 독립적인 공간을 가지게 된다.*/
+        left: 0;/*오프셋*/
+        top: 0;/*오프셋*/
+        /* width: 200px;
+        height: 100px; */
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="other">other</div>
+    <div id="grand">
+       grand
+        <div id="parent">
+           parent
+           <div id="me">me</div>
+        </div>
+    </div>
+  </body>
+</html>

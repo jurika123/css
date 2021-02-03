@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    /*미디어쿼리의 시작을 알림*/
+    @media(max-width:600px){ /*화면의 크기가 500px 이하일 때
+      body의 컬러를 red로 한다.*/
+      body{
+        background-color: skyblue;
+      }
+    }
+      @media(max-width:500px){ /*화면의 크기가 500px 이하일 때
+        body의 컬러를 red로 한다.*/
+        body{
+          background-color: pink;
+        }
+      } /*나머지 캐스케이딩의 조건이 같다면 코드는 나중에 나오는것이 우선순위가
+      높아진다. 더 작은 구간이 우선순위가 높아진다.*/
+      @media(min-width:601px){
+        body{
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+  </body>
+</html>

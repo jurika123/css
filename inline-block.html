@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      h1, a{
+        border:1px solid red;
+      }
+      h1{display: inline;} /*h1에 display: inline으로 주게되면  h1태그는 더이상
+      화면 전체를 쓰지않고 주어진 정보만큼의 영역을 가진다.*/
+
+      a{display: block;}/*a태그에 display: block으로 주개되면
+      a태그는 화면 전체를 쓰고 다른 컨텐츠랑 같은 라인에 위치하지 않는다.*/
+      /*이것이 인라인과 블럭의 차이이다*/
+    </style>
+  </head>
+  <body>
+    <h1>Hello World!</h1><!--자기혼자 화면 전체를 쓰는 태그를 block level element라고한다.-->
+    안녕하세요 <a href="https://opentutorials.org">생활코딩 </a>입니다.
+    <!--a태그처럼 자신과 자신을 둘러싸고있는 다른텍스드,정보들과 하나의 같은줄에 위치하는
+    형태(엘리먼트)를  inline element라고 한다. -->
+  </body>
+</html>

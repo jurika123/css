@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container{
+      background-color: pink;
+      height: 200px;
+      display:flex;
+      flex-direction: row;
+    }
+    .item{
+      background-color: skyblue;
+      color: white;
+      border: 1px solid white;
+    }
+    .item:nth-child(1){
+      flex-basis: 450px;
+      flex-shrink: 1;/*화면 비율만큼 줄어든다. 0으로 선택할시 화면비율은
+      줄어드는 대신 현 상태 유지.*/
+    }
+    .item:nth-child(2){
+      flex-basis: 450px;
+      flex-shrink: 2;/*1번 엘리먼트보다 2의 공간을 더 갖고있어
+      많은 양을 줄일수 있다.*/
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">1</div> <!--div처럼 화면 전체를 쓰는 태그 : block level element-->
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</body>
+</html>
